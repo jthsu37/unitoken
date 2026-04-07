@@ -608,7 +608,7 @@ ul { list-style: none; }
 }
 .steps-grid {
   display: flex;
-  align-items: flex-start;
+  align-items: stretch;
   gap: 0;
   position: relative;
 }
@@ -650,8 +650,9 @@ ul { list-style: none; }
   height: 1px;
   background: var(--gold);
   opacity: 0.25;
-  margin-top: 72px;
+  margin-top: 0;
   flex-shrink: 0;
+  align-self: center;
 }
 
 /* =========================================================
