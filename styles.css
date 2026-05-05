@@ -253,15 +253,31 @@ ul { list-style: none; }
   margin: 0 auto;
   padding: 100px 32px;
 }
-.hero-eyebrow {
-  font-size: 0.72rem;
-  font-weight: 500;
-  letter-spacing: 0.22em;
-  text-transform: uppercase;
-  color: var(--gold);
-  margin-bottom: 28px;
+.hero-brand-lockup {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 20px;
+  width: 100%;
+  max-width: 1160px;
+  margin: 0 auto 36px;
   opacity: 0;
   animation: fadeUp 0.8s 0.2s forwards;
+}
+.hero-logo {
+  width: auto;
+  max-width: 100%;
+  height: auto;
+  filter: drop-shadow(0 12px 28px rgba(0, 0, 0, 0.32));
+}
+.hero-company-name {
+  font-family: var(--serif);
+  font-size: clamp(1.6rem, 3.5vw, 2.8rem);
+  font-weight: 500;
+  line-height: 1.12;
+  color: var(--white);
+  max-width: 900px;
+  text-align: center;
 }
 .hero-headline {
   font-family: var(--serif);
@@ -900,6 +916,12 @@ ul { list-style: none; }
   :root { --nav-h: 60px; }
   .container { padding: 0 20px; }
   .hero-inner { padding: 80px 20px; }
+  .hero-brand-lockup {
+    width: 100%;
+    text-align: center;
+  }
+  .hero-company-name { max-width: 100%; }
+  .hero-headline, .hero-sub { text-align: center; }
   .hero-actions { flex-direction: column; }
   .hero-actions .btn { width: 100%; justify-content: center; }
   .contact-actions { flex-direction: column; }
