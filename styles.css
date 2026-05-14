@@ -251,7 +251,7 @@ ul { list-style: none; }
   z-index: 2;
   max-width: 1160px;
   margin: 0 auto;
-  padding: 100px 32px;
+  padding: 120px 0;
 }
 .hero-brand-lockup {
   display: flex;
@@ -266,18 +266,19 @@ ul { list-style: none; }
 }
 .hero-logo {
   width: auto;
-  max-width: min(28vw, 320px);
-  max-height: 18vh;
+  max-width: min(40vw, 480px);
+  max-height: 28vh;
   height: auto;
   filter: drop-shadow(0 12px 28px rgba(0, 0, 0, 0.32));
 }
 .hero-company-name {
   font-family: var(--serif);
-  font-size: clamp(1rem, 1.8vw, 1.5rem);
+  font-size: clamp(2.4rem, 4.8vw, 3.6rem);
   font-weight: 500;
   line-height: 1.12;
   color: var(--white);
-  max-width: 560px;
+  width: 100%;
+  max-width: 100%;
   text-align: center;
 }
 .hero-feature-media {
@@ -356,7 +357,7 @@ ul { list-style: none; }
   padding: 0;
 }
 .feature-media-band {
-  padding: 72px 0 16px;
+  padding: 120px 0;
   background: var(--bg);
 }
 .feature-media-band .offering-media {
@@ -404,7 +405,7 @@ ul { list-style: none; }
    ABOUT
    ========================================================= */
 .about {
-  padding: 64px 0 120px;
+  padding: 0 0 120px;
   background: var(--bg);
 }
 .about-grid {
@@ -944,8 +945,8 @@ ul { list-style: none; }
     text-align: center;
   }
   .hero-logo {
-    max-width: min(48vw, 220px);
-    max-height: 14vh;
+    max-width: min(62vw, 300px);
+    max-height: 22vh;
   }
   .hero-company-name { max-width: 100%; }
   .hero-feature-image {
